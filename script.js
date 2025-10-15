@@ -201,3 +201,27 @@ window.addEventListener('scroll', function() {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const img = document.getElementById('usecase-edusync-img');
+    const modal = document.getElementById('modal-usecase');
+    const modalImg = document.getElementById('modal-img');
+    const modalClose = document.getElementById('modal-close');
+
+    if (img && modal && modalImg && modalClose) {
+        img.onclick = function() {
+            modal.classList.add('active');
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+        };
+        modalClose.onclick = function() {
+            modal.classList.remove('active');
+        };
+        // Fecha o modal ao clicar fora da imagem
+        modal.onclick = function(e) {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        };
+    }
+});
+

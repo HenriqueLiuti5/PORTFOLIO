@@ -175,23 +175,31 @@
                 </div>
                 
                 <div class="projetos-grid">
-                    <div class="projeto-card">
-                        <div class="projeto-image">
-                            <img src="edusync.png" alt="EduSync - Sistema de Gestão Acadêmica" class="projeto-logo">
-                        </div>
-                        <div class="projeto-content">
-                            <h3>EduSync - Sistema de Gestão Acadêmica</h3>
-                            <p>Plataforma completa para gestão de atividades acadêmicas</p>
-                            <div class="projeto-tech">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">JAVASCRIPT</span>
-                                <span class="tech-tag">PRISMA</span>
-                            </div>
-                            <a href="https://plataforma-academica.vercel.app/" class="projeto-link" target="_blank">Link do projeto</a>
-                        </div>
-                    </div>
+    <div class="projeto-card">
+        <div class="projeto-image">
+            <img src="edusync.png" alt="EduSync - Sistema de Gestão Acadêmica" class="projeto-logo">
+        </div>
+        <div class="projeto-content-row">
+            <div class="projeto-content">
+                <h3>EduSync - Sistema de Gestão Acadêmica</h3>
+                <p>Plataforma completa para gestão de atividades acadêmicas</p>
+                <div class="projeto-tech">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JAVASCRIPT</span>
+                    <span class="tech-tag">PRISMA</span>
                 </div>
+                <a href="https://plataforma-academica.vercel.app/" class="projeto-link" target="_blank">Link do projeto</a>
+            </div>
+            <div class="projeto-usecase-image">
+                <div class="usecase-img-wrapper">
+                    <img src="use-case-edusync.png" alt="Diagrama de Caso de Uso do EduSync" id="usecase-edusync-img" style="cursor:pointer;">
+                    <p class="usecase-caption">Diagrama de Caso de Uso: representa os principais fluxos e funcionalidades do sistema EduSync.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
             </div>
         </section>
 
@@ -256,6 +264,12 @@
             <p>&copy; 2025 Portfólio Acadêmico UniFil. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <div id="modal-usecase" class="modal-usecase">
+    <span class="modal-close" id="modal-close">&times;</span>
+    <img class="modal-content" id="modal-img">
+    <div class="modal-caption">Diagrama de Caso de Uso do EduSync</div>
+</div>
 
     <script src="script.js"></script>
 </body>
