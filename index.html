@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo">
@@ -32,9 +31,7 @@
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="main">
-        <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="container">
                 <div class="hero-content">
@@ -56,7 +53,6 @@
             </div>
         </section>
 
-        <!-- Quem Somos Section -->
         <section id="quem-somos" class="quem-somos">
             <div class="container">
                 <div class="section-header">
@@ -92,12 +88,10 @@
                             </a>
                         </div>
                     </div>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projeto Section -->
         <section id="projeto" class="projeto">
             <div class="container">
                 <div class="section-header">
@@ -122,7 +116,6 @@
             </div>
         </section>
 
-        <!-- Comunidade Section -->
         <section id="comunidade" class="comunidade">
             <div class="container">
                 <div class="section-header">
@@ -166,7 +159,6 @@
             </div>
         </section>
 
-        <!-- Projetos Section -->
         <section id="projetos" class="projetos">
             <div class="container">
                 <div class="section-header">
@@ -175,35 +167,51 @@
                 </div>
                 
                 <div class="projetos-grid">
-    <div class="projeto-card">
-        <div class="projeto-image">
-            <img src="edusync.png" alt="EduSync - Sistema de Gestão Acadêmica" class="projeto-logo">
-        </div>
-        <div class="projeto-content-row">
-            <div class="projeto-content">
-                <h3>EduSync - Sistema de Gestão Acadêmica</h3>
-                <p>Plataforma completa para gestão de atividades acadêmicas</p>
-                <div class="projeto-tech">
-                    <span class="tech-tag">HTML</span>
-                    <span class="tech-tag">CSS</span>
-                    <span class="tech-tag">JAVASCRIPT</span>
-                    <span class="tech-tag">PRISMA</span>
+                    <div class="projeto-card" style="grid-column: span 2;">
+                        <div class="projeto-image">
+                            <img src="edusync.png" alt="EduSync - Sistema de Gestão Acadêmica" class="projeto-logo">
+                        </div>
+                        <div class="projeto-content" style="padding: 2rem;">
+                            <h3>EduSync - Sistema de Gestão Acadêmica (MVP v1.0)</h3>
+                            
+                            <div class="projeto-descricao" style="margin: 1.5rem 0;">
+                                <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">🚀 Funcionalidades Implementadas</h4>
+                                <ul style="list-style: none; padding: 0; color: var(--gray);">
+                                    <li style="margin-bottom: 0.5rem;">🔐 <strong>Autenticação:</strong> Login seguro com hash SHA-256 e controle de sessão.</li>
+                                    <li style="margin-bottom: 0.5rem;">👨‍🏫 <strong>Módulo Professor:</strong> Lançamento de notas (0-10) e frequência com persistência de dados.</li>
+                                    <li style="margin-bottom: 0.5rem;">👨‍🎓 <strong>Módulo Aluno:</strong> Dashboard com boletim, cálculo automático de média e indicadores de desempenho.</li>
+                                </ul>
+                            </div>
+
+                            <div class="projeto-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">LocalStorage</span>
+                            </div>
+
+                            <div class="projeto-diagramas" style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 20px; border-top: 1px solid var(--border-color); padding-top: 20px;">
+                                
+                                <div class="diagrama-item" style="flex: 1; min-width: 250px; text-align: center;">
+                                    <h5 style="margin-bottom: 10px; color: var(--dark-gray);">Caso de Uso</h5>
+                                    <img src="use-case-edusync.png" alt="Diagrama de Caso de Uso" id="usecase-edusync-img" style="width: 100%; border-radius: 8px; border: 1px solid var(--border-color); cursor: pointer;">
+                                </div>
+
+                                <div class="diagrama-item" style="flex: 1; min-width: 250px; text-align: center;">
+                                    <h5 style="margin-bottom: 10px; color: var(--dark-gray);">Modelagem de Dados (DER)</h5>
+                                    <img src="Diagrama.png" alt="Diagrama Entidade Relacionamento" style="width: 100%; border-radius: 8px; border: 1px solid var(--border-color); cursor: pointer;" onclick="window.open(this.src)">
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 2rem; text-align: center;">
+                                <a href="https://plataforma-academica.vercel.app/" class="projeto-link" target="_blank">Acessar Projeto Online</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <a href="https://plataforma-academica.vercel.app/" class="projeto-link" target="_blank">Link do projeto</a>
-            </div>
-            <div class="projeto-usecase-image">
-                <div class="usecase-img-wrapper">
-                    <img src="use-case-edusync.png" alt="Diagrama de Caso de Uso do EduSync" id="usecase-edusync-img" style="cursor:pointer;">
-                    <p class="usecase-caption">Diagrama de Caso de Uso: representa os principais fluxos e funcionalidades do sistema EduSync.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
             </div>
         </section>
 
-        <!-- Contato Section -->
         <section id="contato" class="contato">
             <div class="container">
                 <div class="section-header">
@@ -258,7 +266,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Portfólio Acadêmico UniFil. Todos os direitos reservados.</p>
@@ -266,12 +273,11 @@
     </footer>
 
     <div id="modal-usecase" class="modal-usecase">
-    <span class="modal-close" id="modal-close">&times;</span>
-    <img class="modal-content" id="modal-img">
-    <div class="modal-caption">Diagrama de Caso de Uso do EduSync</div>
-</div>
+        <span class="modal-close" id="modal-close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div class="modal-caption">Diagrama de Caso de Uso do EduSync</div>
+    </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
